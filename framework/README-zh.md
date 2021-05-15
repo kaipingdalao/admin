@@ -69,3 +69,19 @@ Modern browsers and Internet Explorer 10+.
 | IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
 
+## 使用
+### 安装本地包packages
+
+* 安装rollup
+  ```npm i rollup -g```
+* 打包
+  进入包目录，即packages
+  ```rollup -c```
+* 安装包
+  返回在framework目录
+  ```npm link ./packages```
+  或 [参考链接](https://blog.csdn.net/cuk0051/article/details/108319482)
+  包目录`npm link`
+  在`/usr/local/lib/node_modules/`文件夹中创建了一个符号链接，其中包含系统中的全局npm软件包，这些软件包使用`npm -g`安装
+  在另一个项目中使用此模块: `npm link package_name`
+
