@@ -70,6 +70,8 @@ Modern browsers and Internet Explorer 10+.
 
 
 ## 使用
+### 全局使用命令打开admin-cli
+进入cli目录 `npm link`
 ### 安装本地包packages
 
 * 安装rollup
