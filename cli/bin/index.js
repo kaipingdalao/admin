@@ -11,6 +11,7 @@ const opt = {
   启动项目: "start",
   创建子项目: "create",
   编译组件库: "compile",
+  切换项目: "displace",
   版本发布: "",
   Eslint格式校验: "",
   退出: "quit",
