@@ -87,3 +87,5 @@ Modern browsers and Internet Explorer 10+.
   在`/usr/local/lib/node_modules/`文件夹中创建了一个符号链接，其中包含系统中的全局npm软件包，这些软件包使用`npm -g`安装
   在另一个项目中使用此模块: `npm link package_name`
 
+### 项目
+使用admin-cli创建，手动创建需要在framework目录下的submodule.json中的modules字段中添加模块目录名
