@@ -33,7 +33,7 @@ import charts2 from 'submodule/src/views/charts'
  * a base page that does not have permission requirements
  * all roles can be accessed
  */
-export const constantRoutes = [
+const routes = [
   {
     path: '/redirect',
     component: Layout,
@@ -51,35 +51,23 @@ export const constantRoutes = [
     component: () => import('submodule/src/views/login/index'),
     hidden: true,
   },
-  {
-    path: '/',
-    component: Layout,
-    redirect: '/dashboard',
-    children: [
-      {
-        path: 'dashboard',
-        // component: () => import('@/views/dashboard/index'),
-        component: () => import('submodule/src/views/dashboard/dashboard'),
-        name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true },
-      },
-    ],
-  },
   // dashboard,
   charts2,
 
 ]
 
-/**
- * asyncRoutes
- * the routes that need to be dynamically loaded based on user roles
- */
-export const asyncRoutes = [
-]
+export default routes
 
-export default createRouter({
-  // history: createWebHistory(), // require service support
-  history: createWebHashHistory(),
-  scrollBehavior: () => ({ top: 0 }),
-  routes: constantRoutes,
-})
+// /**
+//  * asyncRoutes
+//  * the routes that need to be dynamically loaded based on user roles
+//  */
+// export const asyncRoutes = [
+// ]
+
+// export default createRouter({
+//   // history: createWebHistory(), // require service support
+//   history: createWebHashHistory(),
+//   scrollBehavior: () => ({ top: 0 }),
+//   routes: constantRoutes,
+// })

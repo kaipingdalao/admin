@@ -4,9 +4,10 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Layout from '@/layout'
 
 // import charts2 from '../views/charts2'
-import charts2 from 'submodule/src/views/charts'
+// import charts2 from 'submodule/src/views/charts'
+import moduleRouter from 'submodule/src/router'
 // import dashboard from '../../../sub-a/src/views/dashboard'
-
+console.log(moduleRouter)
 /**
  * Note: sub-menu only appear when route children.length >= 1
  * Detail see: https://panjiachen.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html
@@ -77,8 +78,8 @@ export const constantRoutes = [
     ],
   },
   // dashboard,
-  charts2,
-
+  // charts2,
+  ...moduleRouter
 ]
 
 /**
